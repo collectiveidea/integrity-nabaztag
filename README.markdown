@@ -8,6 +8,8 @@ Integrity Nabaztag Notifier
 
 This lets Integrity alert a [Nabaztag][] after each build is made.
 
+This a very much a work in progress. Please send patches.
+
 Setup Instructions
 ==================
 
