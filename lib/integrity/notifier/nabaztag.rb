@@ -12,6 +12,7 @@ module Integrity
       end
  
       def deliver!
+        nabaztag.voice = 'US-Liberty'
         nabaztag.say(message) 
         if commit.failed?
           nabaztag.move_ears(10, 10)
