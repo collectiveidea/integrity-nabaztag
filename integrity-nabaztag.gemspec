@@ -5,16 +5,22 @@
 
 Gem::Specification.new do |s|
   s.name = %q{integrity-nabaztag}
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Daniel Morrison"]
-  s.date = %q{2009-10-08}
+  s.date = %q{2009-10-09}
   s.description = %q{A Nabaztag notifier for integrity}
   s.email = %q{daniel@collectiveidea.com}
+  s.extra_rdoc_files = [
+    "README.markdown"
+  ]
   s.files = [
-    "Rakefile",
+    ".gitignore",
+     "README.markdown",
+     "Rakefile",
      "VERSION",
+     "integrity-nabaztag.gemspec",
      "lib/integrity/notifier/config.haml",
      "lib/integrity/notifier/nabaztag.rb",
      "vendor/nabaztag-ruby/.gitignore",
