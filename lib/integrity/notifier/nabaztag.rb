@@ -1,5 +1,6 @@
-require "integrity"
-require "nabaztag"
+require 'integrity'
+$:.unshift(File.dirname(__FILE__) + '/../../../vendor/nabaztag-ruby/lib')
+require 'nabaztag'
  
 module Integrity
   class Notifier
@@ -16,12 +17,13 @@ module Integrity
           nabaztag.move_ears(10, 10)
         else
           nabaztag.move_ears(0, 0)
+        end
         nabaztag.send           
       end
  
     private
       def nabaztag
-        @nabaztag ||= Nabaztag.new(config['mac'], config['token'])
+        @nabaztag ||= ::Nabaztag.new(config['mac'], config['token'])
       end
  
       def message
